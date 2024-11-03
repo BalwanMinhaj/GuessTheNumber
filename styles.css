@@ -1,0 +1,73 @@
+@import url('https://api.fontshare.com/v2/css?f[]=array@400,1&f[]=khand@400,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+} body {
+    font-size: 1rem;
+    line-height: 1.65;
+    min-height: 100dvh;
+    font-size: 1.125rem;
+    font-family: 'Khand', sans-serif;
+    background: #eec643;
+    color: #000;
+} .container {
+    max-width: min(1200px, 100% - 3rem);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    gap: 2rem;
+} button {
+    outline: 0;
+    font-family: 'Array', sans-serif;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 2px groove #000;
+    width: 150px;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Array', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+} p {
+    text-align: center;
+    margin-top: -0.5rem;
+} input {
+    outline: 0;
+    border: 2px solid #000;
+    font-family: inherit;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    width: 100px;
+    font-weight: 900;
+    text-align: center;
+} input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.btns {
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
